@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainbg"
+ >
+
+    <TableLayout
+        android:id="@+id/tablelayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:collapseColumns="3"
+        android:paddingLeft="25px"
+        android:paddingRight="30px"
+        android:paddingTop="30px"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:id="@+id/tablerow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textview01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名称" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tablerow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textview02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户密码" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textviewsex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别" />
+
+
+                <RadioGroup
+                    android:id="@+id/gender_g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="男" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="女" />
+                </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textviewmarriage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="婚否" />
+
+            <ToggleButton
+                android:id="@+id/marriged"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tablerow05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/hobby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="爱好" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/reading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="阅读" />
+
+                <CheckBox
+                    android:id="@+id/swimming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="游泳" />
+
+                <CheckBox
+                    android:id="@+id/running"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="跑步" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tablerow06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/职务"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="职务" />
+
+            <Spinner
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tablerow07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消 " >
+            </Button>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册 " >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteGray"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/mybtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="点击刷新" >
+    </Button>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+	    android:max="100"
+	    style="?android:attr/progressBarStyleHorizontal" />
+
+    <ListView
+        android:id="@+id/mylistviewtest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteGray"
+        android:listSelector="#00000000" >
+    </ListView>
+
+</LinearLayout>
